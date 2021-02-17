@@ -37,13 +37,19 @@ Do the following:
    HINT: no function required
 */
 
-// var X = '6';
-// var Y = '7';
-// if (){
 
-// }
-// console.log('x'
-// )
+let x = 1
+let y = 0
+
+if (y===0){
+  let x=x++
+}
+else {
+  let x=0;
+}
+
+console.log(x
+)
 
 
 
@@ -58,9 +64,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-var x=1+9+9+9
-console.log()
-
+let eight = Number ("1999");
+console.log(eight)
 
 
 
@@ -131,9 +136,9 @@ function hungryDog(age, weight){
     // if they are up to 5 pounds .05 of weight //
     if(weight <= 5) 
       {return weight *.05}
-    else if (weight >= 6 || weight <= 10)
+    else if (weight >= 6 && weight <= 10)
       {return weight *.04}
-    else if (weight >= 11 || weight <= 15)
+    else if (weight >= 11 && weight <= 15)
     {return weight *.03}
     else if (weight <= 15)
     {return weight *.02}
@@ -141,11 +146,11 @@ function hungryDog(age, weight){
   }
 
   else if (age <1){
-    if(age >= 2/12 || age <= 4/12)
+    if(age >= 2/12 && age <= 4/12)
       {return weight *.1}
-    if(age >=4/12 || age <=7/12 )
+    if(age >=4/12 && age <=7/12 )
     {return weight *.05}
-    if(age >=7/12 || age <=12/12)
+    if(age >=7/12 && age <=12/12)
     {return weight *.04}
   }
 
@@ -211,7 +216,8 @@ Using the miles function below do the following:
 */
 
 function miles(km){
-    /*add your code here*/
+    let miles = km*.0621371;
+    return miles;
   }
 
 
@@ -224,7 +230,9 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
+function feet(cm){
+  let result = cm/30.48;
+  return result;
     /*add your code here*/
   }
  
@@ -240,11 +248,23 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(
-  i=99; i>0; i--){
-        console.log(i);
+function annoyingSong() {
+  let number = 99
+  
+  for (i=0; i<number;i++) {
+    "{number} bottles of soda on the wall"
+    "take one down pass it around"
+     number-- 
+     "{number} bottles of soda on the wall"
   }
 
+}
+  
+
+
+
+  // i=99; i>0; i--;){
+        // console.log(i);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -264,14 +284,14 @@ Using the grade function below do the following:
 function grade(score){
   if(score >=90) {
     return 'you got an A'
-  } else if(score <= 89 score >= 80) {
-    return 'you got a B';
-  } else if(score <= 79 || score >= 70) {
-    return 'you got a C';
-  } else if(score  <= 69 || score >= 60) {
-    return 'you got a D';
+  } else if(score <= 89 && score >= 80) {
+    return 'you got a B'
+  } else if(score <= 79 && score >= 70) {
+    return 'you got a C'
+  } else if(score  <= 69 && score >= 60) {
+    return 'you got a D'
   } else {
-    return 'you got an F';
+    return 'you got an F'
   }
   /*Your Code here */
   }
