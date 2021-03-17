@@ -17,12 +17,10 @@ Do the following:
 
    HINT: no function required
 */
-// let votingAge = 18;
-// if votingAge >= 18 { 
-//   console.log(true)
-// } else if {
-//   console.log(false)
-// }
+let votingAge = '21';
+if (votingAge >= '18') { 
+  console.log(true)
+}
 
 
 
@@ -36,6 +34,16 @@ Do the following:
 
    HINT: no function required
 */
+
+let x = 1
+let y = 0 
+ 
+if ( y === 0) {
+  let x=x++
+} else {
+  let x=0;
+}
+console.log(x)
 
 
 
@@ -51,7 +59,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let eight = Number ("1999");
+console.log(eight)
 
 
 
