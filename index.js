@@ -17,6 +17,12 @@ Do the following:
 
    HINT: no function required
 */
+// let votingAge = 18;
+// if votingAge >= 18 { 
+//   console.log(true)
+// } else if {
+//   console.log(false)
+// }
 
 
 
@@ -58,8 +64,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a,b){
+   return(a*b)
   }
 
 
@@ -74,10 +80,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    return age*7;
 }
-
+console.log(dogYears(8));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -107,12 +113,43 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+// function hungryDog(weight, age){
+
+//     if (age >=1 && weight <=5) {
+//       return .05*weight;
+//     } else if (age >=1 && weight > 6 && weight < 10) {
+//       return .04 * weight;
+//     } else if (age >=1 && weight > 11 && weight <15){
+//       return .03 * weight;
+//     } else if (age >= 1 && weight >=15) {
+//       return .02*weight;
+//     } else if (age >= 2/12 && age <= 4/12){
+//       return .10 * weight;
+//     } else if (age >= 4/12 && age <= 7/12){
+//       return .05 * weight;
+//     } else if (age <=7/12 && age <= 12/12){
+//       return .04 * weight;
+//     }
+//   }
+//  console.log(hungryDog (5, 10))
+
+function hungryDog(weight, age){
+  if(weight <= 5 && age >= 1){
+    return weight * 0.05;
+  }else if(weight <= 10 && age >= 1){
+    return weight * 0.04;
+  }else if(weight <= 15 && age >= 1){
+    return weight * 0.03;
+  }else if(weight > 15 && age >=1){
+    return weight * 0.02;
+  }else if (age >= .16){
+    return weight * .10;
+  }else if (age >= .33){
+    return weight * 0.05;
+  }else if (age < 1){
+    return weight * 0.04;
   }
-
-
-
+}
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 // Rock, Paper, Scissors - Let's play against the computer!
@@ -171,10 +208,11 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(kilo){
+    let mil = kilo*.621371
+    return mil;
   }
-
+miles(5)
 
 
 //Task 5b - Feet to CM
@@ -185,10 +223,11 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    let ft = cm/30.48
+    return ft;
   }
- 
+ feet(20);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -201,10 +240,12 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
-
+function annoyingSong(startingNumber){
+        for (let i=startingNumber; i>=0; i--) { 
+        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall` 
+      }
+        
+      }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -221,11 +262,20 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+  if (score >= 90 ){
+    return `you got an A`;
+  } else if (score <= 89 && score >= 80) {
+    return `you got a B`;
+  } else if (score <= 79 && score >= 70) {
+    return `you got a C`;
+  } else if (score <= 69 && score >= 60) {
+    return `you got a D`;
+  } else {return `you got an F`} 
+  
   }
   
-  
+  grade (89);
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -240,7 +290,9 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
+function vowelCounter(word) {
+  // let vowel = ['a', 'e', 'i', 'o', 'u'];
+  // for(let i=0; i <=word.length-1;)
     /*add your code here*/
 }
 
