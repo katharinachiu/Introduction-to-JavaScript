@@ -132,7 +132,7 @@ Use the hungryDog function and feeding requirements below to do the following:
 //     }
 //   }
 //  console.log(hungryDog (5, 10))
-
+//comment
 function hungryDog(weight, age){
   if(weight <= 5 && age >= 1){
     return weight * 0.05;
